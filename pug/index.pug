@@ -1,0 +1,345 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title linpaisserie
+        link(rel='icon' href='public/images/favicon.ico' type='image/x-icon')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+        link(rel='stylesheet', href='public/css/stylelin.css')
+    body
+        header                               
+            .container.row    
+                .logo
+                    a(href='index.html')   
+                        img(src='public/images/linpatisserie_logo.svg', alt='linpatisserie_logo')
+                #btn-nav-toggle.icon-menu
+                    a(href='')
+                        img(src='public/images/icon-menu.svg', alt='') 
+                nav 
+                    ul.row   
+                        li 
+                            a(href='news.html') NEWS
+                        li
+                            a(href='about.html') ABOUT 
+                        li 
+                            a.position-r(href='javascript:;') PRODUCT
+                            ul.submenu
+                                li
+                                    a(href='product-list-all.html') 全部產品
+                                li
+                                    a(href='product-list-HOT.html') 熱門產品
+                                li
+                                    a(href='product-list-new.html') 最新產品
+                                li.rad
+                                    a(href='product-list-.html') 季節限定  
+                        li 
+                            a(href='store.html') STORE 
+                        li 
+                            a(href='faq.html') FAQ 
+            
+                .icon-right
+                    ul.row.dpn
+                        li
+                            a.icom-facebook(href='#') 
+                            img(src='public/images/icon_facebook.svg', alt='icon_facebook')
+                        li   
+                            a.icom-search(href='#') 
+                            img(src='public/images/icon_search.svg', alt='icon_search')
+                            ul.sub-search
+                            li.serch-overlay
+                                    //- input(type='text')
+                                    //- input(type='button', value='')
+                                    //- //- 按鈕和overlay
+                        li.position-r     
+                            a.icom-member(href='javascript:;') 
+                            img(src='public/images/icon_member.svg', alt='icon_member')
+                            ul.submember
+                                li
+                                    a(href='login_register.html') 登入/註冊
+                                li
+                                    a(href='member.html') 會員中心
+                                li
+                                    a(href='order.html') 訂單查詢
+                                li
+                                    a(href='collect.html') 收藏清單 
+                        li    
+                            a.icon_shoppingcar(href='#') 
+                            img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
+        //---輪播圖片---------------------------start    
+        .wrap.page-top-set
+            .img-wrap
+                .slideshow-wrap
+                    .mySlides.fade 
+                        img.img-fluid.pic-first(src='public/images/carousel-01.jpg', alt='千層')
+                    .mySlides.fade
+                        img.img-fluid.pic-second(src='public/images/carousel-02.jpg', alt='芝士蛋糕')
+                    .mySlides.fade 
+                        img.img-fluid.pic-third(src='public/images/carousel-03.jpg', alt='馬卡籠')   
+                .text-over-img
+                    .slogan 讓甜點的溫度融入生活中每一個時刻，每一口都帶來滿滿的幸福。
+                    .sign LIN PATISSERIS
+                .btn-carousel-arrow
+                    a.prev(onclick='plusSlides(-1)')  
+                        img(src='public/images/bnt-carousel-r.svg', alt='bnt-carousel-right')    
+                    a.next(onclick='plusSlides(-1)')   
+                        img(src='public/images/bnt-carousel-l.svg', alt='bnt-carousel-left')    
+                .circle-carousel
+                    span.dot(onclick='currentSlide(1)')
+                    span.dot(onclick='currentSlide(2)')
+                    span.dot(onclick='currentSlide(3)')
+        //---店家宣言---------------------------start  
+        .container
+            div
+                .row.flex-space-around
+                    div 
+                        h2 &nbsp;安心食材&nbsp;
+                        hr
+                        p 台灣在地食材
+                        P 高級進口原料
+                    div 
+                        h2 &nbsp;新鮮製作&nbsp;
+                        hr
+                        p 直人誠摯手做
+                        P 優質賞味體驗
+                    div 
+                        h2 &nbsp;美浩生活&nbsp;
+                        hr
+                        p 忠於純粹本質
+                        P 分享甜美優雅
+                .row.flex-space-around
+                    img(src='public/images/safe-food.svg', alt='安心食材-奶油')
+                    img(src='public/images/freshly-made.svg', alt='新鮮製作-工具')
+                    img(src='public/images/good-life.svg', alt='美好生活-糕點')
+        //---news-------------------------------start  
+        #banner-news.wrap-white
+            .container
+                .text-wrap
+                    h2 最新消息
+                    hr
+                .row
+                    img(src='public/images/mango-cake.png', alt='芒果鮮奶油蛋糕')
+                    div 
+                        .date 2022.06.26
+                        h3 -季節限定-
+                        p 夏季限定--芒果鮮奶油蛋糕，開賣啦~
+                        p 即日起供應至7月底~
+                        p 為了保商品的品質，目前提供網路預訂到店面取貨，
+                        p 尚未提供宅配還請見諒! 
+                a.bnt(href="product-list-all.html") 
+                    p READ MORE &nbsp;&nbsp;&#10095;    
+        //---productS-tab-----------------------start  
+        .tab-link.container
+            a(href="#tab1").active 熱門產品
+            a(href="#tab2") 最新產品
+            a(href="#tab3") 季節限定
+            a(href="#tab3") 全部產品&nbsp;&nbsp;&#10095;
+        .product.wrap-white                   
+            #tab1.container.tab-content.active
+                .row
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/hot-1.jpg", alt="草莓塔/6吋")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h4 草莓塔/6吋
+                                hr
+                                p $800
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/hot-2.jpg", alt="香蜜堅果乳酪蛋糕/塊")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h4 香蜜堅果乳酪蛋糕/塊
+                                hr
+                                p $300$
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/hot-3.jpg", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h4 栗子瑪德蓮/3入
+                                hr
+                                p $150$
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/hot-4.jpg", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h4 草莓鮮奶油蛋糕/6吋
+                                hr
+                                p $1000
+                a.bnt(href="product-list-all.html") 
+                    p  VIWE ALL &nbsp;&nbsp;&#10095;    
+                        //- i.fa-regular.fa-angle-right                
+            #tab2.container.tab-content
+                .row
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/new-01.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 藍莓乳酪蛋糕/6吋
+                                hr
+                                p $890
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/new-02.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 巴斯克乳酪蛋糕/6吋
+                                hr
+                                p $750
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/new-03.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 芒果乳酪蛋糕
+                                hr
+                                p $300
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/new-04.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 芒果磅蛋糕/條
+                                hr
+                                p $400
+            #tab3.container.tab-content
+                .row
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/limit-1.jpg", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 芒果鮮奶油蛋糕/8吋
+                                hr
+                                p $800
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/limit-2.jpg", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 香蕉慕斯
+                                hr
+                                p $300
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/limit-3.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 芒果乳酪蛋糕 
+                                hr
+                                p $300
+                    .product-wapper.col-6.col-md-3 
+                        a.wapper(href="#")
+                            .img-overlay
+                                img(src="public/images/limit-4.png", alt="")
+                            .icon-heart
+                                img.active(src="public/images/collect-heart.svg", alt="collect-heart")
+                                img(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                            .product-text 
+                                h3 芒果慕斯
+                                hr
+                                p $300           
+                
+        footer 
+            .container
+                .logo-center 
+                    a(href='index.html')
+                        img(src='public/images/linpatisserie_logo.svg', alt='linpatisserie_logo') 
+                hr   
+                .community.row
+                    a(href='#')
+                        img(src='public/images/icon_instagram.svg', alt='icon_instagram')
+                    a(href='#')
+                        img(src='public/images/icon_facebook.svg', alt='icon_instagram') 
+                .page-list.row.text-center
+                    dl.col-12.col-md-3.dpn
+                        dt
+                        dd
+                            a(href='news.html') 最新消息
+                        dd
+                            a(href='about.html') 關於我們              
+                        dd
+                            a(href='store.html') 店鋪資訊
+                        dd
+                            a(href='faq.html') 常見問題
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='product.html') 全部產品
+                        dd
+                            a(href='product-list-HOT.html') 熱門產品
+                        dd
+                            a(href='product-list-new.html') 最新產品 
+                        dd
+                            a(href='product-list-.html') 季節限定   
+                    dl.col-12.col-md-3
+                        dt 
+                        dd
+                            p 客服專線: 0800-888-888                 
+                        dd
+                            p 客服時段: 週一至週五 09:00-18:00         
+                        dd
+                            p 地址: 台中市南屯區公益路00號  
+                        dd
+                            p E-MAIL: Linpatisserie@gmail.com
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='#') 會員中心
+                        dd
+                            a(href='#') 訂單查詢
+                        dd
+                            a(href='#') 購物車
+                        dd
+                            a(href='#') 收藏清單
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='#') 服務條款 
+                        dd
+                            a(href='#') 聯絡我們
+                        dd
+                            a(href='#') 隱私權聲明
+                p.copyright.text-center Copyright © 2022 Lin Patisserie. All Rights Reserved
+        a.page-top(href="javascript:;")
+            img(src="public/images/to-top.png", alt="page-top") 
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js', integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=', crossorigin='anonymous')
+    script(src='public/js/linpatisserie-script.js')

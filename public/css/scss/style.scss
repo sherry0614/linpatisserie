@@ -1,0 +1,467 @@
+$primaty-color: #a1afbe;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: 1140px;
+    // background-color: rgb(125, 132, 196);
+}
+
+// =========================
+//          頁首 
+// =========================
+header {
+    background-color: #052627;
+}
+
+header>.container h1 {
+    padding-top: 20px;
+}
+
+header>.container h1>a {
+    color: $primaty-color;
+}
+
+header>.container nav>ul {
+    display: flex;
+    // justify-content: space-between;
+}
+
+// header>.container nav>ul>li {
+//     margin-right: 30px;
+// }置中時不需要設定
+
+header>.container nav>ul>li>a {
+    line-height: 60px;
+    color: $primaty-color;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+@media(min-width:768px){
+    header>.container nav{
+        width: 100%;
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    // logo置中 start
+    header{
+        position: relative;
+    }
+    header>.container h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 60px;
+        padding-top: 0px;
+        }
+header>.container nav>ul>li>a {
+    font-size: 1em;
+}
+    header nav{
+        display: flex;
+        justify-content: center;     
+    }
+    header>.container nav>ul>li{
+        margin-left: 10px;
+        margin-right: 10px;
+}
+header>.container nav>ul>li:nth-child(2){
+    margin-right: 250px;
+}
+
+// logo置中end
+    .submenu{
+        position: absolute;
+        background-color: $primaty-color;
+        width: 160%;
+        left: 0px;
+        top: 60p;
+        display: none;
+    }
+    
+    .submenu>li>a{
+        display: block;
+        color: #052627;
+        padding: 10px;
+    }
+    .submenu>li>a:hover{
+        color: #cee2e7;
+        background-color: #0c6669;
+    }
+}
+// min-width 768 end
+// =========================
+//         內容區塊 
+// =========================
+// ---------圖片樣式----------
+
+.img-fluid {
+    width: 100%;
+}
+
+// 圓角樣式
+.img-rounded {
+    border-radius: 8px;
+}
+
+// 圓形樣式
+.img-circle {
+    border-radius: 100%;
+}
+
+
+
+//----------文字樣式----------
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+//---------- 區塊樣式----------
+.row {
+    display: flex;
+    flex-wrap: wrap; // 換行
+}
+
+// // 四欄
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 15px;
+// }
+
+// @for $i from 1 through 10 {
+//     .col-#{$i} {
+//         $num: calc(12/#{$i});
+//         width: calc(100% / #{$i} - 30px);
+//         margin: 0px 15px 40px 15px;
+//     }
+// }
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
+}
+
+@media (min-width:768px) {
+    .order-md-1 {
+        order: -1;
+    }
+}
+
+@media (min-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+
+    }
+}
+
+// // 三欄
+// .col-4 {
+//     width: calc(100% / 3 - 30PX);
+//     margin: 0PX 15PX 40PX 15PX;
+//     //上右下左     
+// }
+
+// // 兩欄
+// .col-6 {
+//     width: calc(100% / 2 - 30px);
+//     margin: 15px;
+// }
+
+// .col-8 {
+//     width: calc(100% / 1.5 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+// .col-9 {
+//     width: calc(100% / 1.333333 - 30px);
+//     margin: 15px;
+// }
+
+// .col-12 {
+//     width: calc(100% - 30px);
+//     margin: 15px;
+// }
+
+
+.title a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.date {
+    color: $primaty-color;
+}
+
+
+h2 {
+    font-size: 2em;
+    margin: 60px auto 30px auto;
+}
+
+// ==============
+// 頁尾
+// ==============
+footer {
+    background-color: #052627;
+    padding: 40px 0 40px 0;
+}
+
+dt {
+    color: #548f9e;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+dd {
+    margin-bottom: 4px;
+}
+
+dd>a {
+    color: #a1afbe;
+}
+
+footer p {
+    color: $primaty-color;
+    font-size: smaller;
+}
+
+// design-list==================
+.breadcrumb {
+
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // width: 100%;
+}
+
+.breadcrumb>li>a {
+    color: #052627;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+// button=============
+.btn-primary {
+    background-color: rgb(163, 195, 245);
+    padding: 15px;
+    color: #052627;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #052627;
+    color: $primaty-color;
+}
+
+
+// =================btn end
+.text-primary {
+    color: #052627;
+}
+
+// image==============
+.img-wrap {
+    display: block;
+    // background-color: rgb(240, 33, 33);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.img-overlay {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-overlay img {
+    vertical-align: top;
+    transition: all .5s;
+}
+
+.img-overlay img:hover {
+    transform: scale(1.2);
+}
+
+// icon=============
+.icon-new {
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    border-radius: 100%;
+    background-color: rgb(215, 129, 148);
+    top: -25px;
+    left: -25px;
+    // 下方正中
+    // bottom: -25px;
+    // left:50%;
+    // margin-left: -25px;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+// 小於767執行 start
+@media(max-width:767px) {
+
+    // h1 {
+    //     width: 85%;
+    // }
+
+// icon-menu
+    .icon-menu {
+        width: 15%;
+        display: block;
+        color: #a1afbe;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    header>.container nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color: rgb(8, 10, 9);
+        // display: none;
+        // 需要蓋板的話打開
+        // position: fixed;
+        // top: 0;
+        // height: 100vh;
+        // z-index: 999;
+    }
+// nav動畫 start
+    nav{
+        left: 0;
+        // 等到二層選單時才使用
+        // left: -100vw;
+        // viewport width
+        transition: all .3s;
+        // opacity: 0;
+    }
+    .icon-menu:hover+nav{
+        left: 0;
+        // opacity: 1;
+    }
+// nav動畫 end
+// .active
+    header>.container nav.active {
+        display: block;
+    }
+
+    header>.container nav>ul {
+        display: block;
+    }
+
+    header>.container nav>ul>li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid $primaty-color
+    }
+
+    header>.container nav>ul>li>a {
+        display: block;
+    }
+    // 二層選單
+    .submenu{
+        display: none;
+        background-color: $primaty-color;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom: 1px solid #052627;
+    }
+
+    .submenu>li>a{
+        color:#052627;
+        // display: block;
+    }
+}
+// max-width 小於767執行 end
+
+// 超過768執行 start
+@media(min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
+// 超過768執行 end
+
+// $i index
+// for迴圈
+// form through 從1開始到3
+@for $i from 1 through 10 {
+    .fz-#{$i} {
+        font-size: $i * 1em;
+    }
+}
+
+@for $var from 1 through 6 {
+    .mb-#{$var} {
+        margin-bottom: $var * 1em;
+    }
+}
+
