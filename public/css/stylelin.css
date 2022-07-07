@@ -12,12 +12,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-image: url(/public/images/bagimg.png);
-  background-repeat: repeat;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 div {
   display: block;
 }
