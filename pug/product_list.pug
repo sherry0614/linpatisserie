@@ -53,16 +53,16 @@ html(lang='en')
                             li
                                 a(href='about.html') ABOUT 
                             li#product-nav-swith
-                                a.position-r(href='javascript:;') PRODUCT
-                                ul#product-nav-snb.submenu
-                                    li
-                                        a(href='product-list-all.html') 全部產品
-                                    li
-                                        a(href='product-list-HOT.html') 熱門產品
-                                    li
-                                        a(href='product-list-new.html') 最新產品
-                                    li.rad
-                                        a(href='product-list-.html') 季節限定  
+                                a.position-r(href='product_list.html') PRODUCT
+                                //- ul#product-nav-snb.submenu
+                                    //- li
+                                    //-     a(href='product-list-all.html') 全部產品
+                                    //- li
+                                    //-     a(href='product-list-HOT.html') 熱門產品
+                                    //- li
+                                    //-     a(href='product-list-new.html') 最新產品
+                                    //- li
+                                    //-     a(href='product-list-.html') 季節限定  
                             li 
                                 a(href='store.html') STORE 
                             li 
@@ -97,271 +97,271 @@ html(lang='en')
                                 a.icon_shoppingcar(href='#') 
                                     img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
         img.img-fluid(src='public/images/product-list-top.jpg', alt='馬卡籠')
-        .container.page-top-set
-            ul.breadcrumbs
+        .container
+            ul.breadcrumbs.page-top-set
                 li
                     a(href="index.html") 首頁
                 li &nbsp;&#10095;&nbsp;
                 li 產品              
-        .productpage-position-r.container
-            .tab-link
-                a(href="#hot").active 
-                    .la-show 熱門產品
-                    .sm-show HOT      
-                a(href="#new") 
-                    .la-show 最新產品
-                    .sm-show NEW
-                a(href="#limited") 
-                    .la-show 季節限定
-                    .sm-show LIMITED                    
-                a(href="#all") 
-                    .la-show 全部產品
-                    .sm-show ALL                          
-            #hot.tab-content.active 
-                .product.product-page-wrap
-                    .row
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-a-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-1.jpg", alt="草莓塔/6吋")
-                                    .product-text 
-                                        h4 草莓塔/6吋
-                                        p $800
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-b-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-2.jpg", alt="香蜜堅果乳酪蛋糕/塊")
-                                    .product-text 
-                                        h4 香蜜堅果乳酪蛋糕/塊
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-c(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-c-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-3.jpg", alt="栗子瑪德蓮/3入")
-                                    .product-text 
-                                        h4 栗子瑪德蓮/3入
-                                        p $150
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-d-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-4.jpg", alt="")
-                                    .product-text 
-                                        h4 草莓鮮奶油蛋糕/6吋
-                                        p $1000
-          
-            #new.tab-content
-                .product.product-page-wrap
-                    .row
-                        .product-wapper.col-6.col-md-3 
-                            .wapper        
-                                img.icon-heart#heart-new-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-01.png", alt="")
-                                    .product-text 
-                                        h4 藍莓乳酪蛋糕/6吋
-                                        p $890
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-02.png", alt="")
-                                    .product-text 
-                                        h4 巴斯克乳酪蛋糕/6吋
-                                        p $750
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-c(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-03.png", alt="")
-                                    .product-text 
-                                        h4 芒果乳酪蛋糕
-                                        p $300
-                                
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-04.png", alt="")
-                                    .product-text 
-                                        h4 芒果磅蛋糕/條
-                                        p $400
-            #limited.tab-content
-                .product.product-page-wrap
-                    .row
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-1.jpg", alt="")
-                                    .product-text 
-                                        h4 芒果鮮奶油蛋糕/8吋
-                                        p $800
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-2.jpg", alt="")
-                                    .product-text 
-                                        h4 香蕉慕斯
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-c(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-3.png", alt="")
-                                    .product-text 
-                                        h4 芒果乳酪蛋糕 
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-4.png", alt="")
-                                    .product-text 
-                                        h4 芒果慕斯
-                                        p $300
-            #all.tab-content
-                .product.product-page-wrap
-                    .row
-                        .product-wapper.col-6.col-md-3 
-                            .wapper        
-                                img.icon-heart#heart-new-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-01.png", alt="")
-                                    .product-text 
-                                        h4 藍莓乳酪蛋糕/6吋
-                                        p $890
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-02.png", alt="")
-                                    .product-text 
-                                        h4 巴斯克乳酪蛋糕/6吋
-                                        p $750
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-c(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-03.png", alt="")
-                                    .product-text 
-                                        h4 芒果乳酪蛋糕
-                                        p $300
-                                
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-new-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-new-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/new-04.png", alt="")
-                                    .product-text 
-                                        h4 芒果磅蛋糕/條
-                                        p $400
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-1.jpg", alt="")
-                                    .product-text 
-                                        h4 芒果鮮奶油蛋糕/8吋
-                                        p $800
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-2.jpg", alt="")
-                                    .product-text 
-                                        h4 香蕉慕斯
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper    
-                                img.icon-heart#heart-limit-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart.active#heart-limit-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/limit-4.png", alt="")
-                                    .product-text 
-                                        h4 芒果慕斯
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-a(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-a-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-1.jpg", alt="草莓塔/6吋")
-                                    .product-text 
-                                        h4 草莓塔/6吋
-                                        p $800
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-b(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-b-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-2.jpg", alt="香蜜堅果乳酪蛋糕/塊")
-                                    .product-text 
-                                        h4 香蜜堅果乳酪蛋糕/塊
-                                        p $300
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-c(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-c-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-3.jpg", alt="栗子瑪德蓮/3入")
-                                    .product-text 
-                                        h4 栗子瑪德蓮/3入
-                                        p $150
-                        .product-wapper.col-6.col-md-3 
-                            .wapper
-                                img.icon-heart#heart-hot-d(src="public/images/collect-heart.svg", alt="collect-heart")
-                                img.icon-heart#heart-hot-d-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
-                                a(href="#")
-                                    .img-overlay
-                                        img(src="public/images/hot-4.jpg", alt="")
-                                    .product-text 
-                                        h4 草莓鮮奶油蛋糕/6吋
-                                        p $1000
+            .productpage-position-r
+                .tab-link
+                    a(href="#hot").active 
+                        .la-show 熱門產品
+                        .sm-show HOT      
+                    a(href="#new") 
+                        .la-show 最新產品
+                        .sm-show NEW
+                    a(href="#limited") 
+                        .la-show 季節限定
+                        .sm-show LIMITED                    
+                    a(href="#all") 
+                        .la-show 全部產品
+                        .sm-show ALL                          
+                #hot.tab-content.active 
+                    .product.product-page-wrap
+                        .row
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-a-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-1.jpg", alt="草莓塔/6吋")
+                                        .product-text 
+                                            h4 草莓塔/6吋
+                                            p $800
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-b-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-2.jpg", alt="香蜜堅果乳酪蛋糕/塊")
+                                        .product-text 
+                                            h4 香蜜堅果乳酪蛋糕/塊
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-c(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-c-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-3.jpg", alt="栗子瑪德蓮/3入")
+                                        .product-text 
+                                            h4 栗子瑪德蓮/3入
+                                            p $150
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-d-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-4.jpg", alt="")
+                                        .product-text 
+                                            h4 草莓鮮奶油蛋糕/6吋
+                                            p $1000
+            
+                #new.tab-content
+                    .product.product-page-wrap
+                        .row
+                            .product-wapper.col-6.col-md-3 
+                                .wapper        
+                                    img.icon-heart#heart-new-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-01.png", alt="")
+                                        .product-text 
+                                            h4 藍莓乳酪蛋糕/6吋
+                                            p $890
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-02.png", alt="")
+                                        .product-text 
+                                            h4 巴斯克乳酪蛋糕/6吋
+                                            p $750
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-c(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-03.png", alt="")
+                                        .product-text 
+                                            h4 芒果乳酪蛋糕
+                                            p $300
+                                    
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-04.png", alt="")
+                                        .product-text 
+                                            h4 芒果磅蛋糕/條
+                                            p $400
+                #limited.tab-content
+                    .product.product-page-wrap
+                        .row
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-1.jpg", alt="")
+                                        .product-text 
+                                            h4 芒果鮮奶油蛋糕/8吋
+                                            p $800
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-2.jpg", alt="")
+                                        .product-text 
+                                            h4 香蕉慕斯
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-c(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-3.png", alt="")
+                                        .product-text 
+                                            h4 芒果乳酪蛋糕 
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-4.png", alt="")
+                                        .product-text 
+                                            h4 芒果慕斯
+                                            p $300
+                #all.tab-content
+                    .product.product-page-wrap
+                        .row
+                            .product-wapper.col-6.col-md-3 
+                                .wapper        
+                                    img.icon-heart#heart-new-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-01.png", alt="")
+                                        .product-text 
+                                            h4 藍莓乳酪蛋糕/6吋
+                                            p $890
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-02.png", alt="")
+                                        .product-text 
+                                            h4 巴斯克乳酪蛋糕/6吋
+                                            p $750
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-c(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-c-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-03.png", alt="")
+                                        .product-text 
+                                            h4 芒果乳酪蛋糕
+                                            p $300
+                                    
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-new-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-new-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/new-04.png", alt="")
+                                        .product-text 
+                                            h4 芒果磅蛋糕/條
+                                            p $400
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-a-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-1.jpg", alt="")
+                                        .product-text 
+                                            h4 芒果鮮奶油蛋糕/8吋
+                                            p $800
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-b-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-2.jpg", alt="")
+                                        .product-text 
+                                            h4 香蕉慕斯
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper    
+                                    img.icon-heart#heart-limit-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart.active#heart-limit-d-act(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/limit-4.png", alt="")
+                                        .product-text 
+                                            h4 芒果慕斯
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-a(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-a-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-1.jpg", alt="草莓塔/6吋")
+                                        .product-text 
+                                            h4 草莓塔/6吋
+                                            p $800
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-b(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-b-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-2.jpg", alt="香蜜堅果乳酪蛋糕/塊")
+                                        .product-text 
+                                            h4 香蜜堅果乳酪蛋糕/塊
+                                            p $300
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-c(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-c-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-3.jpg", alt="栗子瑪德蓮/3入")
+                                        .product-text 
+                                            h4 栗子瑪德蓮/3入
+                                            p $150
+                            .product-wapper.col-6.col-md-3 
+                                .wapper
+                                    img.icon-heart#heart-hot-d(src="public/images/collect-heart.svg", alt="collect-heart")
+                                    img.icon-heart#heart-hot-d-act.active(src="public/images/collect-heart-action.svg", alt="collect-heart-action")
+                                    a(href="#")
+                                        .img-overlay
+                                            img(src="public/images/hot-4.jpg", alt="")
+                                        .product-text 
+                                            h4 草莓鮮奶油蛋糕/6吋
+                                            p $1000
 
 
         footer 

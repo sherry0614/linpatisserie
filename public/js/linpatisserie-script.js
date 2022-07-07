@@ -1,8 +1,6 @@
 new WOW().init();
 
 
-
-
 //---------------------------------------------openNav forphone 
 document.getElementById('btn-nav-toggle').addEventListener('click',openNav)
 function openNav(){

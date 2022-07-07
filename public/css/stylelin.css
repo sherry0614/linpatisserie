@@ -1096,12 +1096,16 @@ h1 {
   }
 }
 .page-top {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 15px;
   right: 15px;
   cursor: pointer;
   z-index: 900;
+}
+
+.page-top.active {
+  display: block;
 }
 
 footer {
