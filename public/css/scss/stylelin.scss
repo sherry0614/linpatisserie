@@ -27,7 +27,7 @@ a {
 }
 
 body {
-    background-image: url(/public/images/background.png);
+    background-image: url(/public/images/bagimg.png);
     background-repeat: repeat;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -747,6 +747,13 @@ h1 {
     line-height: 40px;
     letter-spacing: 0.4em;
 }
+.product-page-wrap>.row>div>h4{
+    padding-bottom: 4px;
+    border-bottom: 1px solid $primaty-color-r3 ;
+    padding-left: 15px;
+    margin-bottom: 12px;
+    width: 260px;
+}
 iframe{
     margin: 30px 5%;
 }
@@ -974,6 +981,11 @@ iframe{
         margin-top: 30px;
         padding-left: 0;
     }
+    .product-page-wrap>.row>div>h4{
+       font-size: 14px;
+        margin: 50px auto;
+        padding-left: 2px;
+    }
 
 }
 
@@ -1120,7 +1132,9 @@ iframe{
     font-size: 10px;
 line-height: 30px;
 }
-
+.product-page-wrap>.row>div>h4{
+     width:180px ;
+ }
 
 }//---------------------------------------<768 phone end
 @media(max-width:412px){
