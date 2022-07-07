@@ -395,7 +395,7 @@ header>.container .icon-right>ul>li>a {
 
 .text-wrap {
     text-align: center;
-    width: 200px;
+    width: 250px;
     margin: 10px auto 32px;
 }
 
@@ -700,7 +700,6 @@ h1 {
 
 .about{
     margin-top: -4px;
-    justify-content: space-around;
 }
 .about{ 
     background-image: url(/public/images/about-text-bcakground.png);
@@ -708,13 +707,17 @@ h1 {
 .about>img{
     width: 30%;
     height: 30%;
-    margin: auto;
+    margin: 3% 5%;
     border-radius:10px;
 }
 .about-text{ 
-    margin: auto;
+    margin: auto 0px auto 0px;
 }
 .about-text>h4{
+    border-bottom:1px solid $primaty-color-r3 ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    // text-align: center;
     margin-top: 20px;
     letter-spacing: 0.2em;
     font-size: 20px;
@@ -725,6 +728,7 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 39px;
+    padding-left: 20px;
 }
 .text-mar-bottom{
     margin-bottom: 25px;
@@ -733,21 +737,21 @@ h1 {
 // ================================================
 // ------------------------------------store.html
 // ================================================
-.product-page-wrap>.row{
+.product-page-wrap>.padding {
     padding: 40px;
 }
 .product-page-wrap>.row>img{
     width: 40%;
     height: 40%;
 } 
-.product-page-wrap>.row>div{
+.product-page-wrap>.row>.store-text{
     margin: auto 0;
     padding-left:30px ;
     font-size: 18px;
     line-height: 40px;
     letter-spacing: 0.4em;
 }
-.product-page-wrap>.row>div>h4{
+.product-page-wrap>.row>.store-text>h4{
     padding-bottom: 4px;
     border-bottom: 1px solid $primaty-color-r3 ;
     padding-left: 15px;
@@ -765,7 +769,7 @@ iframe{
         width: 150px;
         margin-top: 10px;
     }
-    .product-page-wrap>.row>div{
+    .product-page-wrap>.row>.store-text{
         font-size: 16px;
         line-height: 30px;
     }
@@ -955,6 +959,9 @@ iframe{
     }
 
     // -------------------------------------about.html
+    .about-text{ 
+        margin: auto ;
+    }
 
     .about-text>h4{
         letter-spacing: 0.2em;
@@ -970,18 +977,18 @@ iframe{
         margin-bottom: 15px;
     }
 
-    .product-page-wrap>.row>img{
+    .product-page-wrap>.padding>img{
         width: 90%;
     }
-    .product-page-wrap>.row{
+    .product-page-wrap>.padding{
         display: block;
         text-align: center;
     } 
-    .product-page-wrap>.row>div{
+    .product-page-wrap>.row>.store-text {
         margin-top: 30px;
         padding-left: 0;
     }
-    .product-page-wrap>.row>div>h4{
+    .product-page-wrap>.row>.store-text>h4{
        font-size: 14px;
         margin: 50px auto;
         padding-left: 2px;
@@ -1128,17 +1135,17 @@ iframe{
 }
 // -----------------------------------------store.html
 
-.product-page-wrap>.row>div{
+.product-page-wrap>.row>.store-text{
     font-size: 10px;
 line-height: 30px;
 }
-.product-page-wrap>.row>div>h4{
+.product-page-wrap>.row>.store-text>h4{
      width:180px ;
  }
 
 }//---------------------------------------<768 phone end
 @media(max-width:412px){
-    .product-page-wrap>.row>div{
+    .product-page-wrap>.row>.store-text{
         font-size: 8px;
     line-height: 30px;
         letter-spacing: 0.09em;
