@@ -4,7 +4,7 @@ html(lang='en')
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title linpatisserie news
+        title linpatisserie
         link(rel='icon' href='public/images/favicon.ico' type='image/x-icon')
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
         link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
@@ -32,11 +32,11 @@ html(lang='en')
                                     li
                                         a(href='login_register.html') 登入/註冊
                                     li
-                                        a(href='member.html') 會員中心
+                                        a(href='#') 會員中心
                                     li
-                                        a(href='order.html') 訂單查詢
+                                        a(href='#') 訂單查詢
                                     li
-                                        a(href='collect.html') 收藏清單 
+                                        a(href='#') 收藏清單 
                         li    
                             a.icon_shoppingcar(href='#') 
                                 img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
@@ -56,13 +56,13 @@ html(lang='en')
                                 a.position-r(href='product.html') PRODUCT
                                 //- ul#product-nav-snb.submenu
                                 //-     li
-                                //-         a(href='product-list-all.html') 全部產品
+                                //-         a(href='product_list.html#all') 全部產品
                                 //-     li
-                                //-         a(href='product-list-HOT.html') 熱門產品
+                                //-         a(href='product_list.html#hot') 熱門產品
                                 //-     li
-                                //-         a(href='product-list-new.html') 最新產品
+                                //-         a(href='product_list.html#new') 最新產品
                                 //-     li
-                                //-         a(href='product-list-.html') 季節限定  
+                                //-         a(href='product_list.html#limited') 季節限定  
                             li 
                                 a(href='store.html') STORE 
                             li 
@@ -88,86 +88,34 @@ html(lang='en')
                                     li
                                         a(href='login_register.html') 登入/註冊
                                     li
-                                        a(href='member.html') 會員中心
+                                        a(href='#') 會員中心
                                     li
-                                        a(href='order.html') 訂單查詢
+                                        a(href='#') 訂單查詢
                                     li
-                                        a(href='collect.html') 收藏清單 
+                                        a(href='#') 收藏清單 
                             li    
                                 a.icon_shoppingcar(href='#') 
                                     img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
-        .container
-            ul.breadcrumbs.header-space.page-top-set
+        .container.header-space.page-top-set
+            ul.breadcrumbs.page-top-set
                 li
                     a(href="index.html") 首頁
                 li &nbsp;&#10095;&nbsp;
-                li 最新消息     
-            .page-title-wrap 最新消息
-            .new-page-wrap
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-mango-cake.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-mango-cake.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-mango-cake.jpg',alt='芒果鮮奶油蛋糕')
-                    div
-                        .date 2022.06.26
-                        h3 季節限定
-                        .text 夏日芒果鮮奶油蛋糕，開賣啦~即日起供應至7月底~為了維持商品的品質，目前僅提供網路預訂到店面取貨，尚未提供宅配還請見諒! 
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-peach-cake.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-peach-cake.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-peach-cake.jpg', alt='水蜜桃派')
-                    div
-                        .date 2022.6.15
-                        h3 季節限定
-                        .text 香甜可口拉拉山水蜜桃派即將上市，粉嫩香甜水蜜桃搭配馬茲卡邦乳酪，美好滋味千萬別錯過~6/30前預購享9折優惠，預購取貨日期7/1~7/31。
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-bulebarrycake.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-bulebarrycake.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-bulebarrycake.jpg', alt='藍莓乳酪蛋糕')
-                    div
-                        .date 2022.04.30
-                        h3 新品推薦
-                        .text 新品上市~藍莓乳酪蛋糕採用進口智利高品質藍莓，每口都能吃到藍莓的鮮甜，搭配香濃乳酪，是經典不敗的搭配!
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-Basque-cheesecake.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-Basque-cheesecake.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-Basque-cheesecake.jpg', alt='巴斯克乳酪蛋糕')
-                    div
-                        .date 2022.3.10
-                        h3 新品推薦
-                        .text 源自於西班牙的巴斯克乳酪蛋糕 ，又稱「烤焦的乳酪蛋糕」，高溫烘烤出焦香，內含滿滿綿密乳酪，外焦內軟的口感，喜歡乳酪的人一定要把握。
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-canele.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-canele.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-canele.jpg', alt='可麗露')
-                    div
-                        .date 2022.1.10
-                        h3 新品推薦
-                        .text 常溫小點心--可麗露，是法國傳統點心之一，外酥脆內裡柔軟滋潤的口感聞名於世，樸實的外表之下卻充滿了層次~可麗露六入小禮盒開賣，送禮自用兩相宜!
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newph-Charlotte.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/new-Charlotte.jpg', media='(min-width: 769px)')
-                        img(src='public/images/new-Charlotte.jpg', alt='草莓夏洛特')
-                    div
-                        .date 2021.11.01
-                        h3 季節限定
-                        .text 冬季限定-草莓夏洛特，夏洛特蛋糕是法國傳統甜點，外層的手指餅乾外酥內軟口感，再搭配當季草莓製成的酸甜慕斯，每口都是幸福的滋味~即日起提供預購!
-                .new-wrap
-                    picture
-                        source(srcset='public/images/newsph-red-pomegranate-mousse-cake.jpg', media='(max-width: 768px)')
-                        source(srcset='public/images/news-red-pomegranate-mousse-cake.jpg', media='(min-width: 769px)')
-                        img(src='public/images/news-red-pomegranate-mousse-cake.jpg', alt='紅石榴慕絲小蛋糕')
-                    div
-                        .date 2021.8.15
-                        h3 季節限定
-                        .text 秋季限定--紅石榴慕斯蛋糕，新鮮紅石榴配上入口即化的慕絲蛋糕~清爽好口感，即日起提供購買~快來讓他成為你下午茶的小夥伴!
-
+                li 關於Lin Patisserie 
+            img.img-fluid(src="public/images/about-cake-lin-patisserie.png", alt="關於Lin Patisserie")
+            .about.row
+                img.img-fluid(src="public/images/about-figure.jpg", alt="甜點師")
+                //- img.img-fluid.bg-pic(src="public/images/about-text-bcakground.png", alt="粉色背景")
+                .about-text
+                    h4 關於 LIN PATISSERIE
+                    div 小時候吃蛋糕時，感受到的幸福滋味，開啟了學習甜點的路程，
+                    .text-mar-bottom  抱著一份想分享幸福的心情，經營著 LIn Patisserie。
+                    div 我們使用新鮮、優良的原料製作每一個產品，
+                    div 採用更健康的減糖配方，讓甜點更加的符合現代人的飲食。
+                    div 用認真地態度，極致的堅持，打造每一份幸福滋味，
+                    div 期望每位顧客都能感受到滿滿的祝福，
+                    .text-mar-bottom 也期許這裡的每份甜點都能帶給大家歡樂與笑聲，
+                    .text-mar-bottom 讓每一個品味的時刻，留下最美好的記憶。
         footer 
             .container
                 .logo-center 
@@ -229,9 +177,9 @@ html(lang='en')
                         dd
                             a(href='#') 隱私權聲明
                 p.copyright.text-center Copyright © 2022 Lin Patisserie. All Rights Reserved
-        a.page-top(href="javascript:;")
+        a.page-top.top(href="javascript:;")
             img(src="public/images/to-top.png", alt="page-top") 
     script(src='https://code.jquery.com/jquery-3.6.0.min.js', integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=', crossorigin='anonymous')
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
     script(src='public/js/WOW-master/dist/wow.js')
-    script(src='public/js/linpatisserie-script.js')                        
+    script(src='public/js/linpatisserie-script.js')
