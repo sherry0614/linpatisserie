@@ -1,0 +1,237 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title linpaisserie-news
+        link(rel='icon' href='public/images/favicon.ico' type='image/x-icon')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+        link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
+        link(rel='stylesheet', href='public/css/stylelin.css')
+    body
+        header                               
+            .container.position-r  
+                .logo
+                    a(href='index.html')   
+                        img(src='public/images/linpatisserie_logo.svg', alt='linpatisserie_logo')
+                .icon-menu
+                    ul.row
+                        li   
+                            a#phoneicom-search-swith(href='#') 
+                                img(src='public/images/icon_search.svg', alt='icon_search')
+                                ul.sub-search#phoneicom-search
+                                li.serch-overlay
+                                        //- input(type='text')
+                                        //- input(type='button', value='')
+                                        //- //- 按鈕和overlay
+                        li.position-r     
+                            a#phoneicom-member-swith(href='javascript:;') 
+                                img(src='public/images/icon_member.svg', alt='icon_member')
+                                ul.submember#phoneicom-member
+                                    li
+                                        a(href='login_register.html') 登入/註冊
+                                    li
+                                        a(href='member.html') 會員中心
+                                    li
+                                        a(href='order.html') 訂單查詢
+                                    li
+                                        a(href='collect.html') 收藏清單 
+                        li    
+                            a.icon_shoppingcar(href='#') 
+                                img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
+                        li
+                            a#btn-nav-toggle(href='javascript:;')
+
+                                img(src='public/images/icon-menu.svg', alt='') 
+
+                nav#primary-navigation 
+                    .nav-main
+                        ul  
+                            li 
+                                a(href='news.html') NEWS
+                            li
+                                a(href='about.html') ABOUT 
+                            li#product-nav-swith
+                                a.position-r(href='javascript:;') PRODUCT
+                                ul#product-nav-snb.submenu
+                                    li
+                                        a(href='product-list-all.html') 全部產品
+                                    li
+                                        a(href='product-list-HOT.html') 熱門產品
+                                    li
+                                        a(href='product-list-new.html') 最新產品
+                                    li.rad
+                                        a(href='product-list-.html') 季節限定  
+                            li 
+                                a(href='store.html') STORE 
+                            li 
+                                a(href='faq.html') FAQ 
+                
+                    .icon-right
+                        ul.row.dpn
+                            li
+                                a.icom-facebook(href='#') 
+                                    img(src='public/images/icon_facebook.svg', alt='icon_facebook')
+                            li   
+                                a.icom-search(href='#') 
+                                    img(src='public/images/icon_search.svg', alt='icon_search')
+                                ul.sub-search
+                                li.serch-overlay
+                                        //- input(type='text')
+                                        //- input(type='button', value='')
+                                        //- //- 按鈕和overlay
+                            li.position-r#icom-member-swith    
+                                a(href='javascript:;')
+                                    img(src='public/images/icon_member.svg', alt='icon_member')
+                                ul#member-list.submember
+                                    li
+                                        a(href='login_register.html') 登入/註冊
+                                    li
+                                        a(href='member.html') 會員中心
+                                    li
+                                        a(href='order.html') 訂單查詢
+                                    li
+                                        a(href='collect.html') 收藏清單 
+                            li    
+                                a.icon_shoppingcar(href='#') 
+                                    img(src='public/images/icon_shoppingcar.svg', alt='icon_shoppingcar')
+        .container.page-top-set
+            ul.breadcrumbs.header-space
+                li
+                    a(href="index.html") 首頁
+                li &nbsp;&#10095;&nbsp;
+                li 最新消息     
+            .page-title-wrap 最新消息
+            .new-page-wrap
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-mango-cake.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-mango-cake.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-mango-cake.jpg',alt='芒果鮮奶油蛋糕')
+                    div
+                        .date 2022.06.26
+                        h3 季節限定
+                        .text 夏日芒果鮮奶油蛋糕，開賣啦~即日起供應至7月底~為了維持商品的品質，目前僅提供網路預訂到店面取貨，尚未提供宅配還請見諒! 
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-peach-cake.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-peach-cake.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-peach-cake.jpg', alt='水蜜桃派')
+                    div
+                        .date 2022.6.15
+                        h3 季節限定
+                        .text 香甜可口拉拉山水蜜桃派即將上市，粉嫩香甜水蜜桃搭配馬茲卡邦乳酪，美好滋味千萬別錯過~6/30前預購享9折優惠，預購取貨日期7/1~7/31。
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-bulebarrycake.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-bulebarrycake.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-bulebarrycake.jpg', alt='藍莓乳酪蛋糕')
+                    div
+                        .date 2022.04.30
+                        h3 新品推薦
+                        .text 新品上市~藍莓乳酪蛋糕採用進口智利高品質藍莓，每口都能吃到藍莓的鮮甜，搭配香濃乳酪，是經典不敗的搭配!
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-Basque-cheesecake.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-Basque-cheesecake.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-Basque-cheesecake.jpg', alt='巴斯克乳酪蛋糕')
+                    div
+                        .date 2022.3.10
+                        h3 新品推薦
+                        .text 源自於西班牙的巴斯克乳酪蛋糕 ，又稱「烤焦的乳酪蛋糕」，高溫烘烤出焦香，內含滿滿綿密乳酪，外焦內軟的口感，喜歡乳酪的人一定要把握。
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-canele.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-canele.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-canele.jpg', alt='可麗露')
+                    div
+                        .date 2022.1.10
+                        h3 新品推薦
+                        .text 常溫小點心--可麗露，是法國傳統點心之一，外酥脆內裡柔軟滋潤的口感聞名於世，樸實的外表之下卻充滿了層次~可麗露六入小禮盒開賣，送禮自用兩相宜!
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newph-Charlotte.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/new-Charlotte.jpg', media='(min-width: 769px)')
+                        img(src='public/images/new-Charlotte.jpg', alt='草莓夏洛特')
+                    div
+                        .date 2021.11.01
+                        h3 季節限定
+                        .text 冬季限定-草莓夏洛特，夏洛特蛋糕是法國傳統甜點，外層的手指餅乾外酥內軟口感，再搭配當季草莓製成的酸甜慕斯，每口都是幸福的滋味~即日起提供預購!
+                .new-wrap
+                    picture
+                        source(srcset='public/images/newsph-red-pomegranate-mousse-cake.jpg', media='(max-width: 768px)')
+                        source(srcset='public/images/news-red-pomegranate-mousse-cake.jpg', media='(min-width: 769px)')
+                        img(src='public/images/news-red-pomegranate-mousse-cake.jpg', alt='紅石榴慕絲小蛋糕')
+                    div
+                        .date 2021.8.15
+                        h3 季節限定
+                        .text 秋季限定--紅石榴慕斯蛋糕，新鮮紅石榴配上入口即化的慕絲蛋糕~清爽好口感，即日起提供購買~快來讓他成為你下午茶的小夥伴!
+
+        footer 
+            .container
+                .logo-center 
+                    a(href='index.html')
+                        img(src='public/images/linpatisserie_logo.svg', alt='linpatisserie_logo') 
+                hr   
+                .community.row
+                    a(href='#')
+                        img(src='public/images/icon_instagram.svg', alt='icon_instagram')
+                    a(href='#')
+                        img(src='public/images/icon_facebook.svg', alt='icon_instagram') 
+                .page-list.row.text-center
+                    dl.col-12.col-md-3.dpn
+                        dt
+                        dd
+                            a(href='news.html') 最新消息
+                        dd
+                            a(href='about.html') 關於我們              
+                        dd
+                            a(href='store.html') 店鋪資訊
+                        dd
+                            a(href='faq.html') 常見問題
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='product.html') 全部產品
+                        dd
+                            a(href='product-list-HOT.html') 熱門產品
+                        dd
+                            a(href='product-list-new.html') 最新產品 
+                        dd
+                            a(href='product-list-.html') 季節限定   
+                    dl.col-12.col-md-3
+                        dt 
+                        dd
+                            p 客服專線: 0800-888-888                 
+                        dd
+                            p 客服時段: 週一至週五 09:00-18:00         
+                        dd
+                            p 地址: 台中市南屯區公益路00號  
+                        dd
+                            p E-MAIL: Linpatisserie@gmail.com
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='#') 會員中心
+                        dd
+                            a(href='#') 訂單查詢
+                        dd
+                            a(href='#') 購物車
+                        dd
+                            a(href='#') 收藏清單
+                    dl.col-12.col-md-3.dpn
+                        dt 
+                        dd
+                            a(href='#') 服務條款 
+                        dd
+                            a(href='#') 聯絡我們
+                        dd
+                            a(href='#') 隱私權聲明
+                p.copyright.text-center Copyright © 2022 Lin Patisserie. All Rights Reserved
+        a.page-top(href="javascript:;")
+            img(src="public/images/to-top.png", alt="page-top") 
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js', integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=', crossorigin='anonymous')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+    script(src='public/js/WOW-master/dist/wow.js')
+    script(src='public/js/linpatisserie-script.js')                        
