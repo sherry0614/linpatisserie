@@ -1238,7 +1238,7 @@ footer>.container .page-list>dl:nth-child(3) {
 // login
 .new-page-wrap>.row>.frame{
     height: 500px;
-    width: 250px;
+    width: 30%;
     margin: 30px auto 40px;
     padding-left: 15px;
     line-height: 25px;
@@ -1248,6 +1248,11 @@ footer>.container .page-list>dl:nth-child(3) {
 text-align: center;
 
 }
+label{
+    letter-spacing: 0.05em;
+    margin: 10px 0;
+
+}
 input{
     width:100%;
     height: 30px;
@@ -1255,6 +1260,25 @@ input{
     border-radius: 3px;
     border: 1px solid $primaty-color-r2;
     background-color: $primaty-color-r6;
+    padding-left: 10px;
 
     
+}
+button{
+
+    color: $primaty-color-r5;
+    background-color: $primaty-color-r3;
+    border: 0px;
+    width: 100%;
+    padding: 10px 0 10px 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 550;
+    letter-spacing: .5em;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 2% ;
+}
+button:hover{
+    background-color: #ca3c45;
 }
