@@ -118,13 +118,59 @@ html(lang='en')
                 li 登入/註冊     
             .page-title-wrap 登入/註冊  
             .new-page-wrap
-                form(action="", method="get") 
-
-
-
-
-
-
+                .row
+                    .frame
+                        h4 登入
+                        form#main.form-horizontal(action='', method='post', novalidate='')
+                            .form-group
+                                label.col-sm-2.control-label(for='email') Email
+                                .col-sm-5
+                                    input#email.form-control(type='email', placeholder='Email', name='email')
+                                .col-sm-5.messages
+                            .form-group
+                                label.col-sm-2.control-label(for='password') 密碼
+                                .col-sm-5
+                                    input#password.form-control(type='password', placeholder='Password', name='password')
+                                .col-sm-5.messages
+                            .form-group
+                                .col-sm-offset-2.col-sm-10
+                                button.bnt.btn.btn-default(type='submit') 加入會員                    
+                    .frame        
+                        h4 註冊
+                        form#main.form-horizontal(action='', method='post', novalidate='')
+                            .form-group
+                                label.col-sm-2.control-label(for='email') Email
+                                .col-sm-5
+                                    input#email.form-control(type='email', placeholder='Email', name='email')
+                                .col-sm-5.messages
+                            .form-group
+                                label.col-sm-2.control-label(for='password') 密碼
+                                .col-sm-5
+                                    input#password.form-control(type='password', placeholder='Password', name='password')
+                                .col-sm-5.messages                   
+                            .form-group
+                                label.col-sm-2.control-label(for='confirm-password') 請確認密碼
+                                .col-sm-5
+                                    input#confirm-password.form-control(type='password', placeholder='Confirm password', name='confirm-password')
+                                .col-sm-5.messages
+                            .form-group
+                                label.col-sm-2.control-label(for='username') 會員名稱
+                                .col-sm-5
+                                    input#username.form-control(type='text', placeholder='Username', name='username')
+                                .col-sm-5.messages
+                            .form-group
+                                label.col-sm-2.control-label(for='birthdate') 生日
+                                .col-sm-5
+                                    input#birthdate.form-control(type='date', placeholder='YYYY-MM-DD', name='birthdate')
+                                .col-sm-5.messages
+                            .form-group
+                                label.col-sm-2.control-label(for='number-of-children') 手機號碼
+                                .col-sm-5
+                                input#number-of-children.form-control(type='number', placeholder='Number of children', name='number-of-children')
+                                .col-sm-5.messages
+                            .form-group
+                                .col-sm-offset-2.col-sm-10
+                                button.bnt.btn.btn-default(type='submit') 加入會員 
         footer 
             .container
                 .logo-center 

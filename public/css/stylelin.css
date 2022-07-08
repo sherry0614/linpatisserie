@@ -1310,3 +1310,24 @@ footer > .container .page-list > dl:nth-child(3) {
   letter-spacing: 0.1em;
   color: #955b28;
 }
+
+.new-page-wrap > .row > .frame {
+  height: 500px;
+  width: 250px;
+  margin: 30px auto 40px;
+  padding-left: 15px;
+  line-height: 25px;
+}
+
+.new-page-wrap > .row > .frame > h4 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin: 0 0 10px 0px;
+  border-radius: 3px;
+  border: 1px solid #993838;
+  background-color: #faedca;
+}
