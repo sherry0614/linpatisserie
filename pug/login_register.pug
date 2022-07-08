@@ -121,6 +121,7 @@ html(lang='en')
                 .row
                     .frame
                         h4 登入
+                        p 如果您已經成為會員,輸入電子信箱即可登入。
                         form#main.form-horizontal(action='', method='post', novalidate='')
                             .form-group
                                 label.control-label(for='email') Email
@@ -134,9 +135,11 @@ html(lang='en')
                                 .col-sm-5.messages
                             .form-group
                                 .col-sm-offset-2.col-sm-10
-                                button.btn.btn-default(type='submit') 加入會員                    
+                                button.btn.btn-default(type='submit') 登入
+                            p 忘記密碼                        
                     .frame        
                         h4 註冊
+                        p 請輸入下列欄位進行註冊。
                         form#main.form-horizontal(action='', method='post', novalidate='')
                             .form-group
                                 label.control-label(for='email') Email

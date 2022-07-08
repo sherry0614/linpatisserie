@@ -1163,7 +1163,7 @@ iframe {
 
   .position-r > .tab-link {
     position: absolute;
-    top: 39.5px;
+    top: 4px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1323,6 +1323,18 @@ footer > .container .page-list > dl:nth-child(3) {
   text-align: center;
 }
 
+.new-page-wrap > .row > .frame > p {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 15px;
+  padding: 0 0 5px 0;
+  color: #e08967;
+}
+
+form > p {
+  text-decoration: underline;
+}
+
 label {
   letter-spacing: 0.05em;
   margin: 10px 0;
@@ -1333,14 +1345,14 @@ input {
   height: 30px;
   margin: 0 0 10px 0px;
   border-radius: 3px;
-  border: 1px solid #993838;
-  background-color: #faedca;
+  border: 1px solid #e08967;
+  background-color: #f9eada;
   padding-left: 10px;
 }
 
 button {
   color: #fdf9ee;
-  background-color: #e08967;
+  background-color: #912a2c;
   border: 0px;
   width: 100%;
   padding: 10px 0 10px 8px;
