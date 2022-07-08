@@ -118,7 +118,7 @@ html(lang='en')
                 li 登入/註冊     
             .page-title-wrap 登入/註冊  
             .new-page-wrap
-                .row
+                .row.form-center
                     .frame
                         h4 登入
                         p 如果您已經成為會員,輸入電子信箱即可登入。
@@ -136,7 +136,8 @@ html(lang='en')
                             .form-group
                                 .col-sm-offset-2.col-sm-10
                                 button.btn.btn-default(type='submit') 登入
-                            p 忘記密碼                        
+                            a(href="") 
+                                p 忘記密碼                        
                     .frame        
                         h4 註冊
                         p 請輸入下列欄位進行註冊。
@@ -169,7 +170,7 @@ html(lang='en')
                             .form-group
                                 label.control-label(for='number-of-children') 手機號碼
                                 .col-sm-5
-                                input#number-of-children.form-control(type='text', placeholder='手機號碼', name='cellphonen-number')
+                                    input#number-of-children.form-control(type='text', placeholder='手機號碼', name='cellphonen-number')
                                 .col-sm-5.messages
                             .form-group
                                 .col-sm-offset-2.col-sm-10

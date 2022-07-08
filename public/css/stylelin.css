@@ -1312,15 +1312,26 @@ footer > .container .page-list > dl:nth-child(3) {
 }
 
 .new-page-wrap > .row > .frame {
-  height: 500px;
-  width: 30%;
-  margin: 30px auto 40px;
-  padding-left: 15px;
+  width: 25%;
+  margin: 30px;
+  padding: 10px;
   line-height: 25px;
+  border-radius: 10px;
+  border: 3px solid #e08967;
+  position: relative;
 }
 
 .new-page-wrap > .row > .frame > h4 {
-  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.5em;
+  background-color: #ffffff;
+  padding: 0 7px 0 15px;
+  color: #912a2c;
+  font-weight: 900;
+  position: absolute;
+  top: -15px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .new-page-wrap > .row > .frame > p {
@@ -1329,19 +1340,38 @@ footer > .container .page-list > dl:nth-child(3) {
   line-height: 15px;
   padding: 0 0 5px 0;
   color: #e08967;
+  text-align: center;
 }
 
-form > p {
+form > a {
+  font-size: 10px;
   text-decoration: underline;
 }
 
-label {
+form > a > p {
+  margin-left: 5px;
+  margin-top: -10px;
+  color: #000000;
+}
+
+.new-page-wrap > .row > .frame > form > .form-group > label {
   letter-spacing: 0.05em;
-  margin: 10px 0;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.form-group > .col-sm-5 {
+  text-align: center;
+}
+
+.row.form-center {
+  position: relative;
+  left: 40%;
+  transform: translateX(-21.75%);
 }
 
 input {
-  width: 100%;
+  width: 88%;
   height: 30px;
   margin: 0 0 10px 0px;
   border-radius: 3px;
@@ -1354,15 +1384,16 @@ button {
   color: #fdf9ee;
   background-color: #912a2c;
   border: 0px;
-  width: 100%;
-  padding: 10px 0 10px 8px;
+  width: 98%;
+  padding: 12px 0 12px 0px;
   border-radius: 5px;
   margin-top: 20px;
   font-weight: 550;
   letter-spacing: 0.5em;
   text-align: center;
   cursor: pointer;
-  margin-left: 2%;
+  margin-left: 1%;
+  margin-bottom: 20px;
 }
 
 button:hover {
