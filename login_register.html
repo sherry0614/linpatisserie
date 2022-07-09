@@ -82,11 +82,15 @@
         <li>&nbsp;&#10095;&nbsp;</li>
         <li>登入/註冊     </li>
       </ul>
-      <div class="page-title-wrap">登入/註冊  </div>
+      <div class="page-title-wrap phdisplaynone">登入/註冊  </div>
+      <ul class="tab-login"> 
+        <li> <a class="active" href="">(href="#log_in") 登入</a></li>
+        <li> <a href="#register">註冊     </a></li>
+      </ul>
       <div class="new-page-wrap">
-        <div class="row form-center">
-          <div class="frame">
-            <h4>登入</h4>
+        <div class="form-center">
+          <div class="frame active" id="log_in">
+            <h4 class="phdisplaynone">登入</h4>
             <p>如果您已經成為會員,輸入電子信箱即可登入。</p>
             <form class="form-horizontal" id="main" action="" method="post" novalidate="">
               <div class="form-group">
@@ -110,8 +114,8 @@
                 <p>忘記密碼                        </p></a>
             </form>
           </div>
-          <div class="frame">       
-            <h4>註冊</h4>
+          <div class="frame" id="register">      
+            <h4 class="phdisplaynone">註冊</h4>
             <p>請輸入下列欄位進行註冊。</p>
             <form class="form-horizontal" id="main" action="" method="post" novalidate="">
               <div class="form-group">

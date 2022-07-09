@@ -116,11 +116,16 @@ html(lang='en')
                     a(href="index.html") 首頁
                 li &nbsp;&#10095;&nbsp;
                 li 登入/註冊     
-            .page-title-wrap 登入/註冊  
+            .page-title-wrap.phdisplaynone 登入/註冊  
+            ul.tab-login 
+                li 
+                    a.active(href="") (href="#log_in") 登入
+                li 
+                    a(href="#register") 註冊     
             .new-page-wrap
-                .row.form-center
-                    .frame
-                        h4 登入
+                .form-center
+                    .frame.active#log_in
+                        h4.phdisplaynone 登入
                         p 如果您已經成為會員,輸入電子信箱即可登入。
                         form#main.form-horizontal(action='', method='post', novalidate='')
                             .form-group
@@ -138,8 +143,8 @@ html(lang='en')
                                 button.btn.btn-default(type='submit') 登入
                             a(href="") 
                                 p 忘記密碼                        
-                    .frame        
-                        h4 註冊
+                    .frame#register       
+                        h4.phdisplaynone 註冊
                         p 請輸入下列欄位進行註冊。
                         form#main.form-horizontal(action='', method='post', novalidate='')
                             .form-group

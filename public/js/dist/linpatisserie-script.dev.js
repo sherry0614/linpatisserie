@@ -154,6 +154,11 @@ $('.tab-link>a').on('click', function () {
   $($(this).attr('href')).addClass('active');
   $($(this).attr('href')).siblings().removeClass('active');
 }); //tab-link>a end
+// --------------------------------------------login-tab
+// $('.tab-login a').on('click',function(){
+//     $(this).addClass('active')
+//     $().
+// })
 // --------------------------------------------page-top
 // 定義捲軸高變數
 
