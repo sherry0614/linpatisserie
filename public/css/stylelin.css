@@ -994,6 +994,8 @@ iframe {
 form > a {
   font-size: 10px;
   text-decoration: underline;
+  display: block;
+  margin-left: 75%;
 }
 
 form > a > p {
@@ -1026,7 +1028,7 @@ button {
   color: #fdf9ee;
   background-color: #912a2c;
   border: 0px;
-  width: 98%;
+  width: 90%;
   padding: 12px 0 12px 0px;
   border-radius: 5px;
   margin-top: 20px;
@@ -1034,7 +1036,7 @@ button {
   letter-spacing: 0.5em;
   text-align: center;
   cursor: pointer;
-  margin-left: 1%;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 
@@ -1044,6 +1046,10 @@ button:hover {
 
 .tab-login {
   display: none;
+}
+
+.tabinner {
+  display: block;
 }
 
 @media (max-width: 1150px) {
@@ -1409,23 +1415,17 @@ button:hover {
     font-weight: 600;
     letter-spacing: 1em;
     padding: 10px 10px 10px 30px;
-    color: #3a3a3a;
+    color: #747474;
   }
 
-  .tab-login > li > a.active {
+  .tab-login > li > a.oncolor {
     background-color: #993838;
     color: #ffffff;
   }
 
-  #log_in::before {
-    content: "";
-    display: block;
-    height: 180px;
-    background-color: #3a3a3a;
-    position: relative;
-    top: -180px;
-    margin-bottom: -180px;
-    visibility: hidden;
+  .oncolor {
+    background-color: #993838;
+    color: #ffffff;
   }
 
   .form-center {

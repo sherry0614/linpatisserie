@@ -119,12 +119,12 @@ html(lang='en')
             .page-title-wrap.phdisplaynone 登入/註冊  
             ul.tab-login 
                 li 
-                    a.active(href="#log_in") 登入
-                li 
-                    a(href="#register") 註冊     
+                    a.tablink.oncolor(href='javascript:void(0)', onclick="openTab(event, 'tabinner1')") 登入
+                li  
+                    a.tablink(href='javascript:void(0)', onclick="openTab(event, 'tabinner2')") 註冊   
             .new-page-wrap
                 .form-center
-                    .frame.active#log_in
+                    .frame#tabinner1.tabinner.active
                         h4.phdisplaynone 登入
                         p 如果您已經成為會員,輸入電子信箱即可登入。
                         form#main.form-horizontal(action='', method='post', novalidate='')
@@ -143,7 +143,7 @@ html(lang='en')
                                 button.btn.btn-default(type='submit') 登入
                             a(href="") 
                                 p 忘記密碼                        
-                    .frame#register       
+                    .frame#tabinner2.tabinner 
                         h4.phdisplaynone 註冊
                         p 請輸入下列欄位進行註冊。
                         form#main.form-horizontal(action='', method='post', novalidate='')

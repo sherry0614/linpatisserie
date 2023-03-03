@@ -891,9 +891,12 @@ iframe {
     text-align: center;
 }
 
+
 form>a {
     font-size: 10px;
     text-decoration: underline;
+    display: block;
+    margin-left: 75%;
 }
 
 form>a>p {
@@ -925,7 +928,7 @@ button {
     color: $primaty-color-r5;
     background-color: $primaty-color-r1;
     border: 0px;
-    width: 98%;
+    width: 90%;
     padding: 12px 0 12px 0px;
     border-radius: 5px;
     margin-top: 20px;
@@ -933,7 +936,7 @@ button {
     letter-spacing: .5em;
     text-align: center;
     cursor: pointer;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-bottom: 20px;
 }
 
@@ -945,7 +948,9 @@ button:hover {
     display: none;
 }
 
-
+.tabinner{
+    display: block;
+}
 
 // ==============================================================
 // ====================自適應網頁================================
@@ -1365,23 +1370,17 @@ button:hover {
         font-weight: 600;
         letter-spacing: 1em;
         padding: 10px 10px 10px 30px ;
-        color: $primaty-color-text2;     
+        color: $primaty-color-text3;     
     }
-    .tab-login>li>a.active{
+    .tab-login>li>a.oncolor{
         background-color: $primaty-color-r2;
         color: $primaty-color-text5;
     }
-    #log_in::before{
-        content: "";
-        display: block;
-        height: 180px;
-        background-color: #3a3a3a;
-        position: relative;
-        top: -180px;
-        margin-bottom: -180px;
-        visibility: hidden;
-
+    .oncolor{
+        background-color: $primaty-color-r2;
+        color: $primaty-color-text5;
     }
+ 
 
        .form-center {
         display: unset;

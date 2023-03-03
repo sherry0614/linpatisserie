@@ -155,12 +155,26 @@ $('.tab-link>a').on('click', function () {
   $($(this).attr('href')).siblings().removeClass('active');
 }); //tab-link>a end
 // --------------------------------------------login-tab
-// $('.tab-login a').on('click',function(){
-//     $(this).addClass('active')
-//     $().
-// })
-// --------------------------------------------page-top
+
+function openTab(evt, className) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabinner");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("oncolor");
+  }
+
+  document.getElementById(className).style.display = "block";
+  evt.currentTarget.classList.add("oncolor");
+} // --------------------------------------------page-top
 // 定義捲軸高變數
+
 
 var offsetTop;
 var pageTop = $('.page-top-set').offset().top;

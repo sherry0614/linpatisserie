@@ -84,12 +84,12 @@
       </ul>
       <div class="page-title-wrap phdisplaynone">登入/註冊  </div>
       <ul class="tab-login"> 
-        <li> <a class="active" href="#log_in"> 登入</a></li>
-        <li> <a href="#register">註冊     </a></li>
+        <li> <a class="tablink oncolor" href="javascript:void(0)" onclick="openTab(event, 'tabinner1')">登入</a></li>
+        <li> <a class="tablink" href="javascript:void(0)" onclick="openTab(event, 'tabinner2')">註冊   </a></li>
       </ul>
       <div class="new-page-wrap">
         <div class="form-center">
-          <div class="frame active" id="log_in">
+          <div class="frame tabinner active" id="tabinner1">
             <h4 class="phdisplaynone">登入</h4>
             <p>如果您已經成為會員,輸入電子信箱即可登入。</p>
             <form class="form-horizontal" id="main" action="" method="post" novalidate="">
@@ -114,7 +114,7 @@
                 <p>忘記密碼                        </p></a>
             </form>
           </div>
-          <div class="frame" id="register">      
+          <div class="frame tabinner" id="tabinner2"> 
             <h4 class="phdisplaynone">註冊</h4>
             <p>請輸入下列欄位進行註冊。</p>
             <form class="form-horizontal" id="main" action="" method="post" novalidate="">
