@@ -1,5 +1,10 @@
 new WOW().init();
 
+//-----------------------preloader
+var loader = document.getElementById('preloader');
+window.addEventListener('load',function(){
+    loader.style.display = 'none';
+})
 
 //---------------------------------------------openNav forphone 
 document.getElementById('btn-nav-toggle').addEventListener('click',openNav)
